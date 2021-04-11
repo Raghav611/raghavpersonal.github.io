@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.glassbg{
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+.glass{
+    background: white;
+    min-height: 80vh; /*This basically means 80% of the height of the container*/
+    width: 60%;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.6), /*Please never forget this comma and the last value (0.7) is the opacity of the element*/
+        rgba(255, 255, 255, 0.3)
+        );
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem); /*This is what enables the blur effect*/
+    display: flex; /*Display flex arranges the children elements in a horizontal form and this is important to be enabled to use the align-items: center; and justify-content: center; functions.... */
+}
+.circle1,
+.circle2{
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.3)
+    );
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: absolute; /* position; absolute; lets you to move around elements. Note that we are moving the both circles in the upcoming lines...this is a preperation for it. */
+    z-index: 1; /* z-index allots a "z index" to an element through which we can place elemts above or below other elements. more the index more ahead the element is. default index is 1. */
+}
+.circle1{
+    top: 5%;
+    right: 15%;
+}
+.circle2{
+    bottom: 5%;
+    left: 10%;
+}
+.avatarbg{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% -20.71%, #de9c2c 0, #e5922a 8.33%, #ea852b 16.67%, #ee772d 25%, #f16731 33.33%, #f35436 41.67%, #f23c3c 50%, #f01843 58.33%, #ed004c 66.67%, #e90057 75%, #e30064 83.33%, #db0071 91.67%, #d10080 100%);
+}
+.avatar{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 3.5px solid rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+.ytlogo{
+    width: 106px;
+    height: 76px;
+}
+.instalogo{
+    height: 100px;
+    width: 115px;
+    padding-left: 15px;;
+}
+.dashboard{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    border-radius: 2rem;
+    background: linear-gradient(
+        to right top,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.1)
+      );
+    );
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8rem;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: -10rem;
+    margin-top: -4rem;
+}
+.yt{
+    display: flex;
+    align-items: center;
+    margin: 1rem 5rem;
+}
+.instagram{
+    display: flex;
+    align-items: center;
+    margin: 1rem 5rem;
+    padding-left: 0.5rem;
+}
+.instaname{
+    padding-left: 1.05rem;
+}
+.name{
+    color: #426696;
+    font-weight: 700;
+    opacity: 0.7;
+    padding-top: 1rem;
+}
+h3{
+    color: #5784be;
+    font-weight: 600;
+    opacity: 0.7;
+    padding-top: 0.4rem;
+}
+.instaname,
+.ytname{
+    color: #658ec6;
+    font-weight: 600;
+    opacity: 0.7;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
